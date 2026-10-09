@@ -33,22 +33,24 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. You can select a difficulty of the game, which changes the expected range of the game
+2. You can input a number, and if selected, the game can give you a hint to adjust your guess
+3. The game will tell you if you win or lose, your points, and allows you to start a new game
+4. When you start a new game, a new number is generated and you can start a new game.
 
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+**Screenshot**:
+<img src = "figures/complete_game.png"> 
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+============================= test session starts ==============================
+platform darwin -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0
+rootdir: .
+plugins: anyio-4.15.1
+collected 3 items
+
+tests/test_game_logic.py ...                                             [100%]
+
+============================== 3 passed in 0.01s ===============================
 ```
-
-## 🚀 Stretch Features
-
-- [ ] [If you choose to complete Challenge 4, describe the Enhanced UI changes here — a screenshot is optional]
